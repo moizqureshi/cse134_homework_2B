@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, .link > a, ul, li {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333333;
+}
+
+li {
+  margin-left: 2em;
+}
+
+.siteTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5em;
+}
+
+.siteTitle > h1 {
+  font-size: 5em;
+  text-align: center;
+  margin: 0 1em 0 1em;
+  color: #36b56b;
+}
+
+.logoImage {
+  width: auto;
+  max-height: 120px;
+}
+
+.classContent {
+  width: 100%;
+  margin-left: 18%;
+}
+
+.classContent > h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #36b56b;
+}
+
+main > h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: 18%;
+  color: #36b56b;
+}
+
+.teamContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamMember {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 64%;
+}
+
+.memberProfile {
+  display: flex;
+  flex-direction: column;
+}
+
+.memberImage {
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.memberImage:hover {
+  -webkit-filter: grayscale(0);
+ filter: none;
+}
+
+.teamMember:nth-of-type(even) > .memberProfile {
+  order: 2;
+}
+
+.memberAbout {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 600px;
+  background-color: #f3f3f3;
+
+}
+
+.memberInfo {
+  padding-top: 1em;
+  padding-left: 1.5em;
+}
+
+.memberInfo > h3, p {
+  font-weight: 300;
+}
+
+.memberInfo > h2 {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.memberInfo > h3, p {
+  font-size: 1.5em;
+}
+
+.memberLinks {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link > a {
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+.linkImage {
+  width: auto;
+  max-height: 75px;
+}
+
+.legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em;
+}
+
+.legal > h3 {
+  color: #36b56b;
+}
