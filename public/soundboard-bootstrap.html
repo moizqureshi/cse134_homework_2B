@@ -8,22 +8,25 @@ The structural version passes validation since we are adhereing to HTML5 standar
 the presentational version, this version removes the deprecated attributes that were used to "style"
 the page using only HTML.
 -->
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kerpal Soundboard</title>
     <!-- Latest compiled and minified BootStrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
-    <header>
-      <div class="siteTitle">
-        <img class="logoImage" src="assets/imgs/logo.png" alt="Kerpal" />
-        <h1 id="headerTitle">Kerpal Soundboard - Structure</h1>
-        <a href="">Login</a>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6 col-md-4">
+          <img class="img-responsive pull-right" src="assets/imgs/logo.png" alt="Kerpal" />
+        </div>
+        <h1 id="headerTitle" class="col-xs-6 col-md-4 text-center">Kerpal Soundboard</h1>
+        <a class="col-xs-6 col-md-4" href="">Login</a>
       </div>
     </header>
-    <main>
+    <main class="container-fluid">
       <div class="soundboard">
         <div class="sound">
           <div class="soundImg">
@@ -164,9 +167,5 @@ the page using only HTML.
         <h3>&copy; Copyright 2017. Team Kerpal - CSE134B Summer 2017 - UCSD</h3>
       </div>
     </footer>
-    <!-- Latest compiled and minified BootStrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JQuery (required for BootStrap) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
