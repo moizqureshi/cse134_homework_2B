@@ -12,8 +12,7 @@ body {
   background: -webkit-linear-gradient(to top, #11FFBD, #AAFFA9) fixed;  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #11FFBD, #AAFFA9) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/*body > * {flex: 1;}*/
-
+body > * {flex: 1;}
 h1, h2, h3, p, .link > a, ul, li {
   font-family: 'Lato', sans-serif;
   color: black;
@@ -179,7 +178,7 @@ main > h2 {margin-bottom: 0.5em; padding-left: 18%;}
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 64%;
+  width: 100%;
 }
 .memberProfile {
   display: flex;
@@ -189,9 +188,10 @@ main > h2 {margin-bottom: 0.5em; padding-left: 18%;}
   filter: gray;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+  width: 600px;
+  height: 600px;
 }
 .memberImage:hover {-webkit-filter: grayscale(0); filter: none;}
-.teamMember:nth-of-type(even) > .memberProfile {order: 2;}
 .memberAbout {
   display: flex;
   flex-direction: column;
@@ -199,11 +199,9 @@ main > h2 {margin-bottom: 0.5em; padding-left: 18%;}
   width: 600px;
   background-color: transparent;
   border: 0.1em solid black;
-
 }
 .memberInfo {
-  padding-top: 1em;
-  padding-left: 1.5em;
+  padding: 1em 1.5em 0 1.5em;
 }
 .memberInfo > h3, p {
   font-weight: 300;
@@ -232,7 +230,6 @@ main > h2 {margin-bottom: 0.5em; padding-left: 18%;}
   width: auto;
   max-height: 75px;
 }
-
 footer {
   display: flex;
   justify-content: center;
@@ -242,16 +239,35 @@ footer {
 .legal > h3 {text-align: center}
 @media only screen and (min-width: 1681px) {
   #headerTitle {font-size: 6em;}
+  .teamMember:nth-of-type(even) > .memberProfile {order: 2;}
 }
 @media only screen and (min-width: 1201px) and (max-width: 1680px) {
   #headerTitle {font-size: 3.5em;}
+  .teamMember:nth-of-type(even) > .memberProfile {order: 2;}
 }
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
   #headerTitle {font-size: 2.5em;}
   .coolSoundEq > div {width: 1.5em; height: 0.5em;}
+  .teamMember{justify-content: space-around; margin: 1.3em 0; padding: 0 1.3em;}
+  .memberInfo {padding: 0.25em 0.35em 0 0.35em;}
+  .memberInfo > h2 {font-size: 1em; font-style: italic;}
+  .memberInfo > h3, p {font-size: 0.7em;}
+  .link > a {font-size: 1em;}
+  .linkImage {width: auto; max-height: 50px;}
+  .memberProfile {padding-right: 1em;}
+  .memberAbout {height: 250px; width: 80%; padding-left: 1em;}
+  .memberImage {height: 250px; width: 250px; border-radius: 50%;}
 }
 @media only screen and (max-width: 799px) {
   #headerTitle {font-size: 2.5em;}
   .coolSoundEq > div {width: 1.5em; height: 0.5em;}
-  header > div:last-of-type {padding-right: 0.5em;}
+  .teamMember{justify-content: space-around; margin: 1.3em 0; padding: 0 1.3em;}
+  .memberInfo {padding: 0.25em 0.35em 0 0.35em;}
+  .memberInfo > h2 {font-size: 1em; font-style: italic;}
+  .memberInfo > h3, p {font-size: 0.7em;}
+  .link > a {font-size: 1em;}
+  .linkImage {width: auto; max-height: 50px;}
+  .memberProfile {padding-right: 1em;}
+  .memberAbout {height: 200px; width: 200px;}
+  .memberImage {height: 200px; width: 200px; border-radius: 50%;}
 }
