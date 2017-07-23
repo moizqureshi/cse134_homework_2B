@@ -102,7 +102,7 @@ header > div:last-of-type {
   height: 4em;
   padding-right: 2em;
 }
-#loginLink, .sound > h3 {  font-family: 'Lato', sans-serif;}
+#loginLink, .sound > h3 {font-family: 'Lato', sans-serif;}
 #loginLink {color: black; text-decoration: none;}
 main {padding-top: 8em;}
 .soundboard {
