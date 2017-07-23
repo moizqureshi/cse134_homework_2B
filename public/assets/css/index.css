@@ -252,19 +252,21 @@ footer {
   .link > a {font-size: 1em;}
   .linkImage {width: auto; max-height: 50px;}
   .memberProfile {padding-right: 1em;}
-  .memberAbout {height: 250px; width: 80%; padding-left: 1em;}
+  .memberAbout {height: 250px; width: 80%; padding-left: 1em; border: none;}
   .memberImage {height: 250px; width: 250px; border-radius: 50%;}
+  .memberLinks {margin-top: 1.5em;}
 }
 @media only screen and (max-width: 799px) {
   #headerTitle {font-size: 2.5em;}
   .coolSoundEq > div {width: 1.5em; height: 0.75em;}
-  .teamMember{justify-content: space-around; margin: 1.3em 0; padding: 0 1.3em;}
+  .teamMember{justify-content: space-around; margin: 3em 0; padding: 0 1.3em;}
   .memberInfo {padding: 0.25em 0.35em 0 0.35em;}
   .memberInfo > h2 {font-size: 1em; font-style: italic;}
   .memberInfo > h3, p {font-size: 0.7em;}
   .link > a {font-size: 1em;}
   .linkImage {width: auto; max-height: 50px;}
   .memberProfile {padding-right: 1em;}
-  .memberAbout {height: 200px; width: 200px;}
-  .memberImage {height: 200px; width: 200px; border-radius: 50%;}
+  .memberAbout {height: 250px; width: 80%; padding-left: 1em; border: none;}
+  .memberImage {height: 250px; width: 250px; border-radius: 50%;}
+  .memberLinks {margin-top: 1.5em;}
 }
