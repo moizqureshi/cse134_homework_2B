@@ -210,13 +210,13 @@ footer {
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
   .sound {width: 50%;}
   #headerTitle {font-size: 2.5em;}
-  .coolSoundEq > div {width: 1.5em; height: 1em;}
+  .coolSoundEq > div {width: 1.5em; height: 0.75em;}
   .playpauseButtonImg {visibility: visible;}
 }
 @media only screen and (max-width: 799px) {
   .sound {width: 100%;}
   #headerTitle {font-size: 2.5em;}
-  .coolSoundEq > div {width: 1.5em; height: 1em;}
+  .coolSoundEq > div {width: 1.5em; height: 0.75em;}
   header > div:last-of-type {padding-right: 0.5em;}
   .playpauseButtonImg {visibility: visible;}
 }
