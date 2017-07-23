@@ -169,8 +169,11 @@ main {padding-top: 8em;}
 }
 .soundImg {position: relative;}
 .soundImg > img {
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 30%;
+  -moz-box-shadow: 3px 3px 5px 0 black;
+  -webkit-box-shadow: 3px 3px 5px 0 black;
+  box-shadow: 3px 3px 5px 0 black;
 }
 .soundButton {
   position: absolute;
@@ -200,7 +203,7 @@ footer {
 .legal > h3 {text-align: center}
 
 @media only screen and (min-width: 1681px) {
-  .sound {width: 25%;}
+  .sound {width: 33%;}
   #headerTitle {font-size: 6em;}
 }
 @media only screen and (min-width: 1201px) and (max-width: 1680px) {
