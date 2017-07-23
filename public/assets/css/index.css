@@ -53,25 +53,25 @@ header {
 	-webkit-animation: load 3s ease-in-out infinite;
 	animation: load 3s ease-in-out infinite;
 }
+.coolSoundEq .rec1 {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
 .coolSoundEq .rec2 {
 	-webkit-animation-delay: 0.1s;
 	animation-delay: 0.1s;
 }
 .coolSoundEq .rec3 {
-	-webkit-animation-delay: 0.2s;
-	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
 }
 .coolSoundEq .rec4 {
-	-webkit-animation-delay: 0.3s;
-	animation-delay: 0.3s;
-}
-.coolSoundEq .rec5 {
 	-webkit-animation-delay: 0.4s;
 	animation-delay: 0.4s;
 }
-.coolSoundEq .rec6 {
-	-webkit-animation-delay: 0.5s;
-	animation-delay: 0.5s;
+.coolSoundEq .rec5 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
 }
 @-moz-keyframes load {
   0%, 100% {
@@ -81,17 +81,16 @@ header {
 		-moz-transform: scaleY(5);
 	}
 	33.33% {
-		-moz-transform: scaleY(1);
+		-moz-transform: scaleY(3);
 	}
 	50% {
 		-moz-transform: scaleY(5);
-    background: #11FFBD;
 	}
 	66.67% {
 		-moz-transform: scaleY(1);
 	}
 	83.34% {
-		-moz-transform: scaleY(5);
+		-moz-transform: scaleY(4);
 	}
 }
 @-webkit-keyframes load {
@@ -102,17 +101,16 @@ header {
     -webkit-transform: scaleY(5);
   }
   33.33% {
-    -webkit-transform: scaleY(1);
+    -webkit-transform: scaleY(3);
   }
   50% {
     -webkit-transform: scaleY(5);
-    background: #11FFBD;
   }
   66.67% {
     -webkit-transform: scaleY(1);
   }
   83.34% {
-    -webkit-transform: scaleY(5);
+    -webkit-transform: scaleY(4);
   }
 }
 @keyframes load {
@@ -123,17 +121,16 @@ header {
 		transform: scaleY(5);
 	}
 	33.33% {
-		transform: scaleY(1);
+		transform: scaleY(3);
 	}
 	50% {
 		transform: scaleY(5);
-    background: #11FFBD;
 	}
 	66.67% {
 		transform: scaleY(1);
 	}
 	83.34% {
-		transform: scaleY(5);
+		transform: scaleY(4);
 	}
 }
 #headerTitle, .legal > h3 {
@@ -247,7 +244,7 @@ footer {
 }
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
   #headerTitle {font-size: 2.5em;}
-  .coolSoundEq > div {width: 1.5em; height: 0.5em;}
+  .coolSoundEq > div {width: 1.5em; height: 1em;}
   .teamMember{justify-content: space-around; margin: 1.3em 0; padding: 0 1.3em;}
   .memberInfo {padding: 0.25em 0.35em 0 0.35em;}
   .memberInfo > h2 {font-size: 1em; font-style: italic;}
@@ -260,7 +257,7 @@ footer {
 }
 @media only screen and (max-width: 799px) {
   #headerTitle {font-size: 2.5em;}
-  .coolSoundEq > div {width: 1.5em; height: 0.5em;}
+  .coolSoundEq > div {width: 1.5em; height: 1em;}
   .teamMember{justify-content: space-around; margin: 1.3em 0; padding: 0 1.3em;}
   .memberInfo {padding: 0.25em 0.35em 0 0.35em;}
   .memberInfo > h2 {font-size: 1em; font-style: italic;}
