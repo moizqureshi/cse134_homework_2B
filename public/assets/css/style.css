@@ -6,10 +6,13 @@
 * {box-sizing: border-box;}
 html, body {width: 100%; height: 100%; margin: 0; padding: 0;}
 body {
+  display: flex;
+  flex-direction: column;
   background: #AAFFA9;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #11FFBD, #AAFFA9) fixed;  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #11FFBD, #AAFFA9) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+body > * {flex: 1;}
 header {
   position: fixed;
   display: flex;
@@ -112,13 +115,13 @@ header {
 	}
 	16.67% {
 		transform: scaleY(5);
-    background: white;
 	}
 	33.33% {
 		transform: scaleY(1);
 	}
 	50% {
 		transform: scaleY(5);
+    background: #11FFBD;
 	}
 	66.67% {
 		transform: scaleY(1);
@@ -146,22 +149,18 @@ header > div:last-of-type {
   height: 4em;
   padding-right: 2em;
 }
+#loginLink, .sound > h3 {  font-family: 'Lato', sans-serif;}
 #loginLink {
-  font-family: 'Lato', sans-serif;
   color: black;
   text-decoration: none;
 }
-
-main {
-  padding-top: 8em;
-}
+main {padding-top: 8em;}
 .soundboard {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 2em;
 }
-
 .sound {
   display: flex;
   flex-direction: column;
@@ -169,19 +168,11 @@ main {
   justify-content: center;
   margin-bottom: 1em;
 }
-
-.soundImg {
-  position: relative;
-
-}
-
-
-
+.soundImg {position: relative;}
 .soundImg > img {
   border: 3px solid black;
   border-radius: 30%;
 }
-
 .soundButton {
   position: absolute;
   display: flex;
@@ -191,7 +182,6 @@ main {
   top: 0;
   left: 0;
 }
-
 .playPauseBtn {
   width: 100%;
   height: 100%;
@@ -200,19 +190,14 @@ main {
   outline: 0;
   padding: 0;
 }
-
-.playpauseButtonImg {
-  width: 50%;
-  visibility: hidden;
+.playpauseButtonImg {width: 50%; visibility: hidden;}
+.soundButton:hover .playpauseButtonImg {visibility: visible !important;}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-
-.soundButton:hover .playpauseButtonImg {
-  visibility: visible;
-}
-
-.legal > h3 {
-  text-align: center
-}
+.legal > h3 {text-align: center}
 
 @media only screen and (min-width: 1681px) {
   .sound {width: 25%;}
